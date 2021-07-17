@@ -3,25 +3,16 @@
   <head>
     <title>Bookers</title>
     <%= csrf_meta_tags %>
-
+    <!-- fontawesome用 -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  　<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= render 'layouts/header' %>
-
-  	<div class='body'>
-      <div class='container'>
-        
-        
-        <p id="notice"><%= notice %></p>
-      
       	<%= yield %>
-      </div>
-    </div>
-
     <%= render 'layouts/footer' %>
-
   </body>
 </html>

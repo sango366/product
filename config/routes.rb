@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     get 'follows' => 'relationships#follower', as: 'follows'
     get 'followers' => 'relationships#followed', as: 'followers'
   end
-  root 'homes#top'
-  get 'homes/about'
+  root 'homes#start'
+  get 'homes/about' => 'homes#about'
+  get 'homes/top' => 'homes#top'
+  get 'homes/test' => 'homes#test'
 end

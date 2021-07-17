@@ -14,19 +14,22 @@
  *= require_self
  */
 
- @import "bootstrap-sprockets";
+@import "bootstrap-sprockets";
 @import "bootstrap";
 
-header{
-	color:white;
-	.navbar-left{
-		span{
-			font-size:20px;
-			padding-top:10px;
-		}
-	}	
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.container{
+    width: 90%;
 }
 
-.body{
-	margin-top:51px;
+//ナビバーを重ねるために追加。
+//.navbarのrelativeも削除した。←これを削除しなくても任意のものになった。
+//_header 1行目　<nav class="navbar ←削除　navbar-expand-lg
+.page-header{
+  margin-top: -40px;
 }
